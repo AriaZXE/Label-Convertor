@@ -4,7 +4,6 @@ import os
 import xml.etree.ElementTree as ET
 import shutil
 
-# Function to convert Pascal VOC label to YOLO format
 def convert_pascal_to_yolo(xml_file, output_dir, classes):
     tree = ET.parse(xml_file)
     root = tree.getroot()
